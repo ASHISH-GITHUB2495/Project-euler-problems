@@ -10,6 +10,7 @@ using namespace std;
 #define max 100000
 int n;
 int grid[20][20];
+int vis[20][20] = {0};
 ll highest;
 int dx[8] = {3, 3, 0, -3, -3, -3, 0, 3};
 int dy[8] = {0, 3, 3, 3, 0, -3, -3, -3};
@@ -156,4 +157,4 @@ when N <= 10, then both O(N!) and O(2N) are ok (for 2N probably N <= 20 is ok to
 when N <= 100, then O(N3) is ok (I guess that N4 is also ok, but never tried)
 when N <= 1.000, then N2 is also ok
 when N <= 1.000.000, then O(N) is fine (I guess that 10.000.000 is fine too, but I never tried in contest)
-finally when N = 1.000.000.000 then O(N) is NOT ok, you have to find something betterï¿½*/
+finally when N = 1.000.000.000 then O(N) is NOT ok, you have to find something better…*/
